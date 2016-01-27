@@ -11,7 +11,7 @@ public class Watek implements Runnable {
   }
   public void run() {
     System.out.println("Watek nr:" + pe.ile() +", plik" + plik );
-   	File file = new File("c:\\logfile20100131.log");
+   	File file = new File(plik);
 	if(file.delete()){
 		System.out.println(file.getName() + " is deleted!");
 	    pe.zmniejsz(plik);
